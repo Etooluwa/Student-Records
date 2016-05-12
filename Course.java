@@ -24,6 +24,12 @@ public class Course {
 	public void setMark(int theMark){
 		mark= theMark;
 	}
+	public void setProf(String theProf){
+		this.instructor = theProf;
+	}
+	public void setCode(String theCode){
+		this.courseCode = theCode;
+	}
 	public void setNextCourse(Course theCourse){
 		nextCourse = theCourse;
 	}
