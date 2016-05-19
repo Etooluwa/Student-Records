@@ -7,6 +7,7 @@ public class Course {
 	private int mark;
 	private Course prerequisite;
 	private Course nextCourse;
+	private int gradePoint;
 	
 	public ArrayList<CourseWork> getCWork (){
 		return coursework;
@@ -95,6 +96,47 @@ public class Course {
 		}
 		else 
 			return "F";
+		
+	}
+	public int theCGPA (){
+		if (this.theGrade().equals("A+")){
+			return 12;
+		}
+		else if (this.theGrade().equals("A")){
+			return 11;
+		}
+		else if (this.theGrade().equals("A-")){
+			return 10;
+		}
+		else if (this.theGrade().equals("B+")){
+			return 9;
+		}
+		else if (this.theGrade().equals("B")){
+			return 8;
+		}
+		else if (this.theGrade().equals("B-")){
+			return 7;
+		}
+		else if (this.theGrade().equals("C+")){
+			return 6;
+		}
+		else if (this.theGrade().equals("C")){
+			return 5;
+		}
+		else if (this.theGrade().equals("C-")){
+			return 4;
+		}
+		else if (this.theGrade().equals("D+")){
+			return 3;
+		}
+		else if (this.theGrade().equals("D")){
+			return 2;
+		}
+		else if (this.theGrade().equals("D-")){
+			return 1;
+		}
+		else 
+			return 0;
 		
 	}
 	
